@@ -1,0 +1,192 @@
+:root {
+    --white: #FFFFFF;
+    --dark: #000000;
+    --primary: #9B51E0;
+    --secundary: #F2C94C;
+}
+
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /*hack box model*/
+    scroll-snap-type: y mandatory;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Noto Sans', sans-serif;
+  }
+  img{
+      width: 100%;
+  }
+  a{
+    text-decoration: none;
+    color: var(--white);
+  }
+  /* utilidades */
+
+  .centrar-texto {
+    text-align: center;
+  }
+  .h2{
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+  .h4{
+    font-size: 3.2rem;
+  }
+  .no-margin {
+    margin: 0;
+  }
+  .menu-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  @media only screen and (min-width: 769px) {
+    .menu-grid{
+      display: grid;
+      grid-template-columns: 18% 82%;
+      margin: 4rem 0 1rem 4rem;
+    }
+  }
+  .seccion{
+    text-align: center;
+    border-radius: 3px;
+    padding: .5rem;
+    background-color: var(--white);
+  }
+  .seccion__a{
+    background-color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+    text-align: center;
+  }
+    .logo{
+        width: 50%;
+    }
+    .margin-head{
+      margin: 0;
+    }
+    @media only screen and (min-width: 769px) {
+        .logo{
+          width: 60%;
+          padding-right: 4rem;
+          margin: .5rem
+        }  
+        .margin-head{
+          margin: 1rem;
+        } 
+    }
+    .contenedor{
+      max-width: 120rem;
+      margin: 0 auto;
+  }
+  .titulo{
+    background-color: var(--primary);
+    color: var(--white);
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  @media only screen and (min-width: 768px) {
+      .titulo{
+        font-size: 4rem;
+        display: flex;
+        justify-content:center;
+        gap: .5rem
+      }
+  }
+.main-grid{
+    background-image: url(/resources/images/christin-hume-mfB1B1s4sMc-unsplash.jpg);
+}
+
+.texto-contenido{
+  background-color: var(--white);
+  padding: 2rem;
+  font-size: 2rem;
+}
+@media only screen and (min-width: 769px) {
+  .main-grid{
+    background-repeat: no-repeat;
+    background-size:auto;
+    background-position: center;
+    height: 90rem;
+  }
+}
+@media only screen and (min-width: 769px) {
+ .texto-contenido{
+   position: absolute;
+   width: 470px;
+   height: 231px;
+   left: 846px;
+   top: 550px
+ }
+ .icon{
+  position: absolute;
+  left: 180px;
+  top: 15px
+}
+}
+@media only screen and (min-width: 768px) {
+  .grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+  .centrar-columnas {
+      justify-content: center;
+  }
+  .columnas-4 {
+      flex: 0 0 calc(33.3% - 1rem);
+  }
+  .columnas-6 {
+      flex: 0 0 calc(50% - 1rem);
+  }
+  .columnas-8 {
+      flex: 0 0 calc(66.6% - 1rem);
+  }
+  .columnas-10 {
+      flex: 0 0 calc(83.3% - 1rem);
+  }
+  .columnas-12 {
+      flex: 0 0 100%;
+  }
+}
+.curso {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-top: 3rem;
+}
+.curso:last-of-type {
+  border: none;
+}
+.curso p {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.curso p span,
+.curso p.descripcion {
+  font-weight: 400;
+  text-align: justify;
+}
+  /* footer */
+.footer{
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--white);
+    font-weight: 400;
+    padding: .5rem 0;
+  }
+  .footer a{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+  }
+@media only screen and (min-width: 768px) {
+    .footer{
+        font-size: 2rem;
+        padding: 1rem;
+    }    
+}
